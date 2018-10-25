@@ -1,29 +1,38 @@
 package deqo.ysan.mysimplestack;
 
+/**
+ * Un Item contient une valeur de type int.
+ * @author Yoan Sanna
+ */
 class Item {
 
     /**
-     * Retourne la valeur de l'item
+     * Valeur de l'item de type int.
+     */
+    private int data;
+
+    /**
+     * Retourne la valeur de l'item.
      * @return La valeur de l'item
      */
     int getData() {
-        return _data;
+        return data;
     }
 
     /**
-     * Affecte une nouvelle valeur à l'item
-     * @param data La nouvelle valeur à affecter
+     * Affecte une nouvelle valeur à l'item.
+     * @param newData La nouvelle valeur à affecter
      */
-    void setData(int data) {
-        _data = data;
+    void setData(final int newData) {
+        data = newData;
     }
 
     /**
-     * Instancie un nouvel item
-     * @param data La valeur de base de l'item à instancier
+     * Instancie un nouvel item.
+     * @param newData La valeur de base de l'item à instancier
      */
-    Item(int data) {
-        _data = data;
+    Item(final int newData) {
+        data = newData;
     }
 
     private int _data;
