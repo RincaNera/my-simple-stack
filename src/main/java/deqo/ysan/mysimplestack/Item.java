@@ -1,15 +1,28 @@
 package deqo.ysan.mysimplestack;
 
-public class Item {
-    public int getData() {
+class Item {
+
+    /**
+     * Retourne la valeur de l'item
+     * @return La valeur de l'item
+     */
+    int getData() {
         return _data;
     }
 
-    public void setData(int data) {
+    /**
+     * Affecte une nouvelle valeur à l'item
+     * @param data La nouvelle valeur à affecter
+     */
+    void setData(int data) {
         _data = data;
     }
 
-    public Item(int data) {
+    /**
+     * Instancie un nouvel item
+     * @param data La valeur de base de l'item à instancier
+     */
+    Item(int data) {
         _data = data;
     }
 
