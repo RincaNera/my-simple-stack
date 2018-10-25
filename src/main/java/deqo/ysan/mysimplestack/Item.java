@@ -35,5 +35,4 @@ class Item {
         data = newData;
     }
 
-    private int _data;
 }

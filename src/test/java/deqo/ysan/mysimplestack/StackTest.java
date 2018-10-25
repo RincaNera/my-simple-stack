@@ -42,9 +42,13 @@ public class StackTest {
 
     @Test
     public void testPeekOnNotEmptyStack() {
+        // given: un item de type Item
         Item unItem = new Item(5);
+        // when: this item is added in the stack
         stack.push(unItem);
+        // then: this stack actually contains this item
         assertSame(unItem, stack.peek());
+        // then: this size of the stack doesn't change
         assertEquals(1, stack.getSize());
     }
 

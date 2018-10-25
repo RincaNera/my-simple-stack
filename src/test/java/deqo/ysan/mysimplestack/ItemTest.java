@@ -17,12 +17,12 @@ public class ItemTest {
 
     @Test
     public void testGetData() {
-        assertNotEquals(data + 1, item.getData());
+        assertEquals(data, item.getData());
     }
 
     @Test
     public void testSetData() {
         item.setData(data + 1);
-        assertNotEquals(data + 2, item.getData());
+        assertEquals(data + 1, item.getData());
     }
 }
