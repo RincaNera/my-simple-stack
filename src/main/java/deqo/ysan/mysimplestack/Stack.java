@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.List;
 
+/**
+ * Un stack.
+ * @author Yoan Sanna
+ */
 public class Stack implements SimpleStack {
     @Override
     public boolean isEmpty() {
@@ -40,5 +44,8 @@ public class Stack implements SimpleStack {
         items = new ArrayList<Item>();
     }
 
+    /**
+     * Une liste d'item.
+     */
     private List<Item> items;
 }
